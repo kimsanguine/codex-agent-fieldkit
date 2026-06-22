@@ -1,10 +1,29 @@
 # Codex Agent Fieldkit
 
-> An unofficial fieldkit for non-engineers who want to build, verify, and hand off AI agents with Codex.
+> A runnable Codex agent delivery fieldkit for non-engineers: starter code, project memory, evals, safety scans, and handoff artifacts in one public-safe folder.
 
-Not a prompt collection. Not a slide archive.
+Not a prompt collection. Not an agent framework. Not a slide archive.
 
-Codex Agent Fieldkit gives product managers, operators, and corporate AI teams a practical path from idea to working agent:
+Codex Agent Fieldkit gives product managers, operators, and corporate AI teams a practical path from idea to a working, inspectable starter agent:
+
+## Proof Snapshot
+
+- **No API key:** the starter demo runs locally with Python standard library code and synthetic data.
+- **Offline runnable:** `make demo`, `make test`, `make eval`, and `make validate` work from the repo root.
+- **Eval evidence:** 20/20 golden-set eval and 6 unit tests are recorded in the starter validation log.
+- **Safety evidence:** public-first scans cover secret-like strings, private terms, PII, public links, generated artifacts, and gitleaks.
+- **Release evidence:** CI/gitleaks green was recorded in the 2026-06-22 public release audit.
+
+This is not production certification. It is a public-safe delivery kit for learning, adaptation, validation practice, and handoff.
+
+## Who Should Star This?
+
+- PMs and operators who need a runnable first agent folder, not a prompt document.
+- Corporate AI, AX, and L&D leads who need a safe non-engineer workshop kit with dummy data boundaries.
+- Engineers helping non-engineers bring tests, evals, validation logs, and handoff notes before implementation review.
+- Builders comparing Codex workflows who want a small repo that proves the delivery loop end to end.
+
+## How It Works
 
 1. Open the right project folder in Codex.
 2. Give Codex project memory through `AGENTS.md`.
@@ -29,6 +48,14 @@ Most AI agent guides stop at prompts. In real non-engineer workflows, the hard p
 - release audit
 
 This repo turns those practices into a small runnable kit.
+
+## Not Another Agent Framework
+
+| If you are looking for... | This repo gives you... |
+|---|---|
+| A prompt library | A runnable starter agent plus tests, evals, safety scans, and handoff docs |
+| A new orchestration framework | A simple offline delivery path that can later be adapted to your chosen stack |
+| A production customer-service template | A public-safe starter kit with explicit limits and verification artifacts |
 
 ## Quickstart
 
@@ -59,13 +86,6 @@ Source: FAQ-001 | Category: billing | Confidence: 1.00
 Handoff: Owner: billing operations. Check policy before using in production.
 ```
 
-## Use This When
-
-- You are a PM or operator who wants to turn an AI agent idea into a verified working folder.
-- You are an L&D or AX lead who needs a safe non-engineer workshop kit with stop conditions.
-- You are an internal AI task force member who needs a public-first template before touching private data.
-- You are a developer helping non-engineers produce better PRDs, evals, validation logs, and handoff packages.
-
 ## The 60-Minute Codex Path
 
 | Time | Outcome | File |
@@ -83,15 +103,28 @@ For a complete narrated adaptation example, see [`examples/adaptation-walkthroug
 
 For Korean PM/product leaders, see [`docs/ko/pm-leader-guide.md`](docs/ko/pm-leader-guide.md).
 
+## Audience Paths
+
+| Audience | Start here |
+|---|---|
+| Non-engineer operators | [`START_HERE_FOR_OPERATORS.md`](START_HERE_FOR_OPERATORS.md) |
+| PM/CPO or enterprise reviewer | [`docs/production-bridge.md`](docs/production-bridge.md) |
+| Insurance or service operations practitioner | [`docs/adapt-for-insurance-ops.md`](docs/adapt-for-insurance-ops.md) |
+| Workshop facilitator | [`docs/facilitator-guide.md`](docs/facilitator-guide.md) |
+| Open-source curator | [`docs/launch/awesome-list-entry.md`](docs/launch/awesome-list-entry.md) |
+
 ## What's Included
 
 ```text
 .
 ├── START_HERE.md
+├── START_HERE_FOR_OPERATORS.md
 ├── starter-kits/
 │   └── faq-agent-lite/        # runnable offline starter agent
 ├── docs/
 │   ├── codex/                 # Codex workflow for non-engineers
+│   ├── adapt-for-insurance-ops.md
+│   ├── production-bridge.md
 │   ├── public-first-safety/   # anonymization and data policy
 │   ├── release-audit/         # public release checklist
 │   ├── rubrics/               # quality scorecard
@@ -133,7 +166,10 @@ The validation gate checks:
 - golden-set evals
 - secret-like strings
 - private/client terms
+- PII-like strings
 - unsafe public links
+- generated local artifacts
+- optional local gitleaks wrapper, with GitHub Actions gitleaks scan in CI
 - handoff and validation-log presence
 
 For the scoring rubric, see [`docs/rubrics/agent-fieldkit-scorecard.md`](docs/rubrics/agent-fieldkit-scorecard.md).

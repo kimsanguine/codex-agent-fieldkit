@@ -2,6 +2,9 @@
 
 Use this file when you are opening the repo for the first time in Codex.
 
+For a Korean 15-30 minute path for non-engineer operators, see
+[`START_HERE_FOR_OPERATORS.md`](START_HERE_FOR_OPERATORS.md).
+
 ## Goal
 
 Build confidence in the full loop:

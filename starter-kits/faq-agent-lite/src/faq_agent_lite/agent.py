@@ -48,6 +48,25 @@ SYNONYMS = {
     "status": {"progress", "state"},
 }
 
+REAL_DATA_TERMS = {
+    "account",
+    "balance",
+    "data",
+    "document",
+    "documents",
+    "policy",
+    "receipt",
+    "screenshot",
+}
+
+SAFETY_STOP_TERMS = {
+    "private",
+    "production",
+    "real",
+    "screenshot",
+    "upload",
+}
+
 
 @dataclass(frozen=True)
 class FAQRecord:
@@ -101,6 +120,20 @@ class FAQAgent:
 
     def answer(self, question: str) -> AgentAnswer:
         query_tokens = tokenize(question)
+        if query_tokens & {"private", "production", "upload"} or (
+            "real" in query_tokens and query_tokens & REAL_DATA_TERMS
+        ):
+            return AgentAnswer(
+                question=question,
+                answer=(
+                    "Do not use real documents, screenshots, or production data in this demo. "
+                    "Use synthetic examples only and route the request to the owner listed in the handoff package."
+                ),
+                source_id="SAFETY_STOP",
+                category="safety",
+                confidence=0.0,
+                handoff_note="Safety stop: replace real material with synthetic data before continuing.",
+            )
         scored = []
         for record in self.records:
             record_tokens = tokenize(f"{record.category} {record.question} {record.answer}")

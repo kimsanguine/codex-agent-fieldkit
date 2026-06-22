@@ -21,8 +21,8 @@ make validate
 
 Verified on 2026-06-22:
 
-- `make demo`: passed, five demo questions returned sourced answers or the fallback path.
-- `make test`: passed through `make validate`, 5 unit tests.
+- `make demo`: passed, five demo questions returned sourced answers or the safety-stop path.
+- `make test`: passed through `make validate`, 6 unit tests.
 - `make eval`: passed through `make validate`, 100% golden-set score (20/20).
 - `make validate`: passed, including starter checks, repo-level safety scans, PII scan, generated-artifact scan, and gitleaks wrapper.
 

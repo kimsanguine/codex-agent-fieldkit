@@ -25,8 +25,8 @@ Passed.
 Evidence:
 
 - Demo returned sourced answers for four in-scope questions.
-- Demo also returned a fallback for one no-match question loaded from `data/demo_questions.txt`.
-- Unit tests passed: 5 tests.
+- Demo also returned a safety stop for one real-data question loaded from `data/demo_questions.txt`.
+- Unit tests passed: 6 tests.
 - Golden-set eval passed with 100% score (20/20).
 - Starter secret scan passed.
 - Repo-level private-term scan passed.

@@ -34,7 +34,7 @@ make validate
 If `make validate` fails, inspect in this order:
 
 1. Unit test failure: check `starter-kits/faq-agent-lite/tests/test_agent.py`.
-2. Eval failure: compare `tests/golden_set.jsonl` with `data/sample_faqs.csv`.
+2. Eval failure: compare `starter-kits/faq-agent-lite/tests/golden_set.jsonl` with `starter-kits/faq-agent-lite/data/sample_faqs.csv`.
 3. Secret or PII scan failure: remove the value, do not add allowlists unless the value is a documented placeholder.
 4. Public-link scan failure: remove local/private URLs from docs and examples.
 5. Handoff gap: update validation evidence and production-readiness limits.

@@ -37,7 +37,7 @@ README.md
 AGENTS.md
 docs/prd.md
 docs/validation_log.md
-tests/golden_set.jsonl
+starter-kits/faq-agent-lite/tests/golden_set.jsonl
 _handoff/handoff.md
 ```
 

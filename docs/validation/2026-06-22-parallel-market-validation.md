@@ -52,7 +52,7 @@ This repo now includes:
 
 Public release threshold:
 
-- average independent reviewer score at least 9.0
+- average AI expert/persona reviewer score at least 9.0
 - no category below 8.5
 - `make validate` passing
 - no private term or secret scan failures

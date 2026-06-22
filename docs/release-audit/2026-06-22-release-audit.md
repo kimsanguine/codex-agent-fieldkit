@@ -16,8 +16,8 @@ Passed.
 ## Artifact
 
 - Local standalone git repository: yes
-- Validated release-candidate commit: `6284d2d`
-- Tracked files at first release-candidate commit: 68
+- Latest local validated HEAD before public push: `ff580cb`
+- Tracked files at latest local validation: 68
 - Branch: `main`
 - Remote: pending until public GitHub repository is created
 - Post-push CI: pending until public GitHub repository is created
@@ -38,7 +38,7 @@ Evidence:
 
 ## Release Boundary
 
-Public release is acceptable only if independent reviewer validation scores average at least 9.0 with no category below 8.5.
+Public release is acceptable only if AI expert/persona reviewer validation scores average at least 9.0 with no category below 8.5.
 
 ## Remaining Non-Blocking Limits
 

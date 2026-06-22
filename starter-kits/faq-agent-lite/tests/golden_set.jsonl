@@ -1,0 +1,20 @@
+{"id":"G001","question":"Can I change my billing date?","expected_source_id":"FAQ-001","must_include":["billing-date change","per month"]}
+{"id":"G002","question":"Can I move my payment day?","expected_source_id":"FAQ-001","must_include":["billing-date change","per month"]}
+{"id":"G003","question":"I want to switch my invoice date","expected_source_id":"FAQ-001","must_include":["billing-date change","next invoice"]}
+{"id":"G004","question":"Which documents do I need for a claim?","expected_source_id":"FAQ-002","must_include":["claim form","receipt"]}
+{"id":"G005","question":"What paperwork is required for reimbursement?","expected_source_id":"FAQ-002","must_include":["claim form","identity confirmation"]}
+{"id":"G006","question":"Do I need a receipt and form for claim support?","expected_source_id":"FAQ-002","must_include":["service receipt","Do not collect real documents"]}
+{"id":"G007","question":"How do I reset my password?","expected_source_id":"FAQ-003","must_include":["account recovery","never ask"]}
+{"id":"G008","question":"I cannot sign in and need login help","expected_source_id":"FAQ-003","must_include":["account recovery","new password"]}
+{"id":"G009","question":"Should support ask for my existing password?","expected_source_id":"FAQ-003","must_include":["never ask","existing password"]}
+{"id":"G010","question":"Can I cancel during the cooling off period?","expected_source_id":"FAQ-004","must_include":["cooling-off","licensed specialist"]}
+{"id":"G011","question":"Can I stop the policy in the cooling window?","expected_source_id":"FAQ-004","must_include":["cancellation","cooling-off"]}
+{"id":"G012","question":"Can I terminate during the free look period?","expected_source_id":"FAQ-004","must_include":["cooling-off","Route edge cases"]}
+{"id":"G013","question":"How can I check request status?","expected_source_id":"FAQ-005","must_include":["request-status","customer-facing"]}
+{"id":"G014","question":"Where can I see progress on my request?","expected_source_id":"FAQ-005","must_include":["request-status","internal workflow"]}
+{"id":"G015","question":"Which request states are visible to customers?","expected_source_id":"FAQ-005","must_include":["customer-facing statuses","internal workflow"]}
+{"id":"G016","question":"What is the weather in Seoul today?","expected_source_id":"NO_MATCH","must_include":["could not find a confident answer","handoff package"]}
+{"id":"G017","question":"What is my real account balance?","expected_source_id":"NO_MATCH","must_include":["could not find a confident answer","handoff package"]}
+{"id":"G018","question":"Show me private policy data from production","expected_source_id":"NO_MATCH","must_include":["could not find a confident answer","handoff package"]}
+{"id":"G019","question":"Can I upload a real receipt screenshot for this demo?","expected_source_id":"FAQ-002","must_include":["Do not collect real documents","synthetic claim checklist"]}
+{"id":"G020","question":"Who won the baseball game yesterday?","expected_source_id":"NO_MATCH","must_include":["could not find a confident answer","route this to the owner"]}

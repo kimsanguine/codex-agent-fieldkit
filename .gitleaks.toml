@@ -1,0 +1,7 @@
+title = "codex-agent-fieldkit"
+
+[allowlist]
+description = "Synthetic examples and documentation placeholders"
+paths = [
+  '''\.env\.example$''',
+]

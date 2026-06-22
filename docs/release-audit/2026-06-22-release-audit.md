@@ -13,6 +13,15 @@ make validate
 
 Passed.
 
+## Artifact
+
+- Local standalone git repository: yes
+- Validated release-candidate commit: `6284d2d`
+- Tracked files at first release-candidate commit: 68
+- Branch: `main`
+- Remote: pending until public GitHub repository is created
+- Post-push CI: pending until public GitHub repository is created
+
 Evidence:
 
 - Demo returned sourced answers for four in-scope questions.

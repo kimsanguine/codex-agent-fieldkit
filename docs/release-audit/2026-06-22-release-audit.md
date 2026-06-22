@@ -16,11 +16,12 @@ Passed.
 ## Artifact
 
 - Local standalone git repository: yes
-- Latest local validated HEAD before public push: `ff580cb`
+- Latest local validation before public push covered content through `dd59494`
 - Tracked files at latest local validation: 68
 - Branch: `main`
-- Remote: pending until public GitHub repository is created
-- Post-push CI: pending until public GitHub repository is created
+- Remote: <https://github.com/kimsanguine/codex-agent-fieldkit>
+- Initial public push commit: `dd59494`
+- Post-push CI: pending until GitHub Actions is green
 
 Evidence:
 

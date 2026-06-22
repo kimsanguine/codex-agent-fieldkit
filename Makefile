@@ -1,4 +1,4 @@
-.PHONY: setup demo test eval validate safety
+.PHONY: setup demo test eval validate safety validate-report
 
 export PYTHONDONTWRITEBYTECODE := 1
 
@@ -32,3 +32,6 @@ validate:
 	bash scripts/check_public_links.sh
 	bash scripts/check_no_generated_artifacts.sh
 	bash scripts/check_gitleaks.sh
+
+validate-report:
+	python3 scripts/write_validation_report.py

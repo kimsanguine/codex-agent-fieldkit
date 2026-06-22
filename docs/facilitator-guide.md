@@ -2,6 +2,8 @@
 
 Use this guide for a 60-minute or 90-minute non-engineer Codex workshop.
 
+For copy-ready workshop materials, use [`workshop-pack/`](workshop-pack/).
+
 ## Audience
 
 - PMs
@@ -22,6 +24,7 @@ Participants should have:
 - explicit instruction to use only synthetic data
 
 See [`corporate-prerequisites.md`](corporate-prerequisites.md) before running this in a company setting.
+For IT setup details, see [`enterprise-it-preflight.md`](enterprise-it-preflight.md).
 
 ## 60-Minute Plan
 

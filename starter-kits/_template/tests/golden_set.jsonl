@@ -1,0 +1,2 @@
+{"id":"T001","question":"What can this starter answer?","expected_source_id":"SRC-001","must_include":["synthetic starter"]}
+{"id":"T002","question":"Can I use private customer data?","expected_source_id":"SRC-002","must_include":["synthetic data only"]}

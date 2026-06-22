@@ -20,7 +20,17 @@
 
 첫 버전은 의도적으로 작습니다.
 
-API key 없이 돌아가는 FAQ starter kit 하나, 그리고 `make demo`, `make test`, `make eval`, `make validate`로 검증되는 흐름 하나만 넣었습니다.
+API key 없이 돌아가는 FAQ starter kit 하나, 그리고 `make demo`, `make test`, `make eval`, `make validate`, `make validate-report`로 검증되는 흐름 하나를 넣었습니다.
+
+이번 업데이트에는 다음도 추가했습니다.
+
+- README hero image
+- Remotion intro video
+- validation report artifact
+- starter-kit template
+- 보험/서비스 운영 합성 pack
+- 워크숍 worksheet와 facilitator pack
+- enterprise IT preflight와 signoff templates
 
 프롬프트 모음이 아니라, 작동하는 작업면을 공유합니다.
 

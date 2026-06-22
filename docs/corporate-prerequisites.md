@@ -2,6 +2,9 @@
 
 Use this checklist before running Codex Agent Fieldkit inside an organization.
 
+For device-specific checks, proxy/VPN fallback, and workshop unblock paths, see
+[`enterprise-it-preflight.md`](enterprise-it-preflight.md).
+
 ## Access
 
 - [ ] Participants have approved Codex access.

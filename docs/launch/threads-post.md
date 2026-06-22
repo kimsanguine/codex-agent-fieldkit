@@ -17,10 +17,12 @@ API key 없이:
 
 ```bash
 make demo
-make test
-make eval
 make validate
+make validate-report
 ```
+
+이번 업데이트에는 hero image, Remotion intro video, validation report,
+starter-kit template, 보험/서비스 운영 합성 pack, 워크숍 pack까지 넣었다.
 
 Repo:
 

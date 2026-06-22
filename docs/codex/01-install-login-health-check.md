@@ -1,5 +1,8 @@
 # 01. Install, Login, Health Check
 
+For corporate device, proxy, VPN, Windows, and GitHub Enterprise constraints,
+also see [`../enterprise-it-preflight.md`](../enterprise-it-preflight.md).
+
 Use the official Codex docs for current installation details:
 
 - CLI: <https://developers.openai.com/codex/cli>

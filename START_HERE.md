@@ -4,6 +4,8 @@ Use this file when you are opening the repo for the first time in Codex.
 
 For a Korean 15-30 minute path for non-engineer operators, see
 [`START_HERE_FOR_OPERATORS.md`](START_HERE_FOR_OPERATORS.md).
+For a Korean insurance/service operations path, see
+[`START_HERE_FOR_INSURANCE_OPERATORS.md`](START_HERE_FOR_INSURANCE_OPERATORS.md).
 
 ## Goal
 
@@ -23,6 +25,7 @@ make demo
 make test
 make eval
 make validate
+make validate-report
 ```
 
 If all commands pass, open:
@@ -67,4 +70,5 @@ You are done only when:
 - tests pass
 - eval score meets the threshold
 - release scans pass
+- validation report is current when sharing evidence
 - handoff notes are current

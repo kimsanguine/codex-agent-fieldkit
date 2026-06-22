@@ -1,5 +1,12 @@
 # Codex Agent Fieldkit
 
+![Codex Agent Fieldkit banner](assets/images/banner.png)
+
+[![CI](https://github.com/kimsanguine/codex-agent-fieldkit/actions/workflows/ci.yml/badge.svg)](https://github.com/kimsanguine/codex-agent-fieldkit/actions/workflows/ci.yml)
+![No API key for starter](https://img.shields.io/badge/starter-no_API_key-2f6f5e)
+![Synthetic data only](https://img.shields.io/badge/data-synthetic_only-d46a32)
+![License](https://img.shields.io/github/license/kimsanguine/codex-agent-fieldkit)
+
 > A runnable Codex agent delivery fieldkit for non-engineers: starter code, project memory, evals, safety scans, and handoff artifacts in one public-safe folder.
 
 Not a prompt collection. Not an agent framework. Not a slide archive.
@@ -12,9 +19,33 @@ Codex Agent Fieldkit gives product managers, operators, and corporate AI teams a
 - **Offline runnable:** `make demo`, `make test`, `make eval`, and `make validate` work from the repo root.
 - **Eval evidence:** 20/20 golden-set eval and 6 unit tests are recorded in the starter validation log.
 - **Safety evidence:** public-first scans cover secret-like strings, private terms, PII, public links, generated artifacts, and gitleaks.
+- **Report evidence:** `make validate-report` writes a shareable validation report and CI uploads it as an artifact.
 - **Release evidence:** CI/gitleaks green was recorded in the 2026-06-22 public release audit.
 
 This is not production certification. It is a public-safe delivery kit for learning, adaptation, validation practice, and handoff.
+
+## 15-Minute Operator Loop
+
+```bash
+git clone https://github.com/kimsanguine/codex-agent-fieldkit.git
+cd codex-agent-fieldkit
+make demo
+make validate
+make validate-report
+```
+
+Outputs:
+
+- sourced synthetic FAQ answer
+- unit tests and golden-set eval
+- public-safe scans
+- [`reports/validation.md`](reports/validation.md)
+
+## Visual Proof
+
+- Hero image: [`assets/images/banner.png`](assets/images/banner.png)
+- Intro video: [`assets/video/codex-agent-fieldkit-intro.mp4`](assets/video/codex-agent-fieldkit-intro.mp4)
+- Remotion source: [`media/fieldkit-intro-video/`](media/fieldkit-intro-video/)
 
 ## Who Should Star This?
 
@@ -69,6 +100,7 @@ make demo
 make test
 make eval
 make validate
+make validate-report
 ```
 
 Expected result:
@@ -76,6 +108,7 @@ Expected result:
 - `make demo` answers sample customer questions from synthetic FAQs.
 - `make eval` checks the agent against a golden set.
 - `make validate` runs tests, evals, and public-release safety scans.
+- `make validate-report` writes a shareable report for review or CI artifact upload.
 
 Sample output:
 
@@ -108,9 +141,12 @@ For Korean PM/product leaders, see [`docs/ko/pm-leader-guide.md`](docs/ko/pm-lea
 | Audience | Start here |
 |---|---|
 | Non-engineer operators | [`START_HERE_FOR_OPERATORS.md`](START_HERE_FOR_OPERATORS.md) |
+| Korean insurance or service operators | [`START_HERE_FOR_INSURANCE_OPERATORS.md`](START_HERE_FOR_INSURANCE_OPERATORS.md) |
 | PM/CPO or enterprise reviewer | [`docs/production-bridge.md`](docs/production-bridge.md) |
 | Insurance or service operations practitioner | [`docs/adapt-for-insurance-ops.md`](docs/adapt-for-insurance-ops.md) |
-| Workshop facilitator | [`docs/facilitator-guide.md`](docs/facilitator-guide.md) |
+| Workshop facilitator | [`docs/workshop-pack/`](docs/workshop-pack/) |
+| Enterprise IT / enablement owner | [`docs/enterprise-it-preflight.md`](docs/enterprise-it-preflight.md) |
+| Developer adding a new starter kit | [`docs/add-a-starter-kit.md`](docs/add-a-starter-kit.md) |
 | Open-source curator | [`docs/launch/awesome-list-entry.md`](docs/launch/awesome-list-entry.md) |
 
 ## What's Included
@@ -119,16 +155,31 @@ For Korean PM/product leaders, see [`docs/ko/pm-leader-guide.md`](docs/ko/pm-lea
 .
 ├── START_HERE.md
 ├── START_HERE_FOR_OPERATORS.md
+├── START_HERE_FOR_INSURANCE_OPERATORS.md
+├── assets/
+│   ├── images/                # README hero image
+│   └── video/                 # rendered intro video
 ├── starter-kits/
-│   └── faq-agent-lite/        # runnable offline starter agent
+│   ├── faq-agent-lite/        # runnable offline starter agent
+│   └── _template/             # starter-kit contract for future kits
 ├── docs/
 │   ├── codex/                 # Codex workflow for non-engineers
+│   ├── workshop-pack/         # facilitator and learner materials
+│   ├── templates/             # signoff, data inventory, handoff checklists
 │   ├── adapt-for-insurance-ops.md
+│   ├── enterprise-it-preflight.md
+│   ├── add-a-starter-kit.md
 │   ├── production-bridge.md
 │   ├── public-first-safety/   # anonymization and data policy
 │   ├── release-audit/         # public release checklist
 │   ├── rubrics/               # quality scorecard
 │   └── launch/                # public launch copy
+├── examples/
+│   └── insurance-ops-pack/    # synthetic insurance adaptation pack
+├── media/
+│   └── fieldkit-intro-video/  # Remotion source
+├── reports/
+│   └── validation.md          # generated by make validate-report
 ├── scripts/                   # repo-level safety checks
 ├── tests/                     # repo-level private-term checks
 └── .agents/skills/            # optional repo-scoped Codex skill
@@ -150,6 +201,7 @@ make demo
 make test
 make eval
 make validate
+make validate-report
 ```
 
 ## Quality Gate
@@ -173,6 +225,7 @@ The validation gate checks:
 - handoff and validation-log presence
 
 For the scoring rubric, see [`docs/rubrics/agent-fieldkit-scorecard.md`](docs/rubrics/agent-fieldkit-scorecard.md).
+For eval depth, see [`docs/eval-maturity-guide.md`](docs/eval-maturity-guide.md).
 
 ## Public-First Safety
 

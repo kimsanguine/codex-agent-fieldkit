@@ -21,7 +21,7 @@ Passed.
 - Branch: `main`
 - Remote: <https://github.com/kimsanguine/codex-agent-fieldkit>
 - Initial public push commit: `dd59494`
-- Post-push CI: pending until GitHub Actions is green
+- Post-push CI: green on run `27923085361` for commit `5053bd0`
 
 Evidence:
 
@@ -36,6 +36,7 @@ Evidence:
 - Repo-level public-link scan passed.
 - Generated-artifact scan passed.
 - Gitleaks wrapper ran locally and reported local gitleaks was not installed; GitHub Actions is configured to run `gitleaks/gitleaks-action`.
+- GitHub Actions gitleaks scan passed on the public repository.
 
 ## Release Boundary
 

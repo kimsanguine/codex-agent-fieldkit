@@ -34,9 +34,9 @@ git diff --stat
 
 ## Post-Push Gate
 
-- [ ] GitHub Actions `ci` is green on the public repository.
-- [ ] Public repo description and topics are set.
-- [ ] Release audit is updated with commit SHA and remote URL.
+- [x] GitHub Actions `ci` is green on the public repository.
+- [x] Public repo description and topics are set.
+- [x] Release audit is updated with public remote URL and initial public push commit.
 
 ## Release Decision
 

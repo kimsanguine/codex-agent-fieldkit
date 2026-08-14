@@ -27,5 +27,5 @@ make validate
 | `AGENTS.md` | Project memory for Codex |
 | `data/sample_records.csv` | Synthetic source data |
 | `tests/golden_set.jsonl` | Expected behavior |
-| `docs/validation_log.md` | Evidence trail |
+| `workspace/validation_log.md` | Evidence trail |
 | `_handoff/handoff.md` | Next-owner context |

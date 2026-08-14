@@ -31,8 +31,8 @@ make validate-report
 If all commands pass, open:
 
 ```text
-starter-kits/faq-agent-lite/docs/prd.md
-starter-kits/faq-agent-lite/docs/validation_log.md
+starter-kits/faq-agent-lite/workspace/prd.md
+starter-kits/faq-agent-lite/workspace/validation_log.md
 starter-kits/faq-agent-lite/_handoff/handoff.md
 ```
 

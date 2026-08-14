@@ -14,7 +14,7 @@ starter-kits/<kit-name>/
 ├── Makefile
 ├── START_HERE.md
 ├── data/
-├── docs/
+├── guides/
 │   ├── architecture.md
 │   ├── prd.md
 │   ├── progress.md
@@ -69,7 +69,7 @@ The eval should prove at least three behaviors:
 
 Each starter kit must keep:
 
-- `docs/validation_log.md`: commands run, result, evidence, remaining risk
+- `guides/validation_log.md`: commands run, result, evidence, remaining risk
 - `_handoff/handoff.md`: current owner, verified state, known limits, next step
 - `_handoff/migration_checklist.md`: what can and cannot move into a private adaptation
 

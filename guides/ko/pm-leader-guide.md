@@ -27,11 +27,11 @@ AI agent 프로젝트는 데모가 되는 순간보다, 다음 질문에 답할 
 |---|---|
 | 전체 구조 | `README.md` |
 | 시작 순서 | `START_HERE.md` |
-| 요구사항 | `starter-kits/faq-agent-lite/docs/prd.md` |
-| 구조 | `starter-kits/faq-agent-lite/docs/architecture.md` |
-| 검증 증거 | `starter-kits/faq-agent-lite/docs/validation_log.md` |
+| 요구사항 | `starter-kits/faq-agent-lite/workspace/prd.md` |
+| 구조 | `starter-kits/faq-agent-lite/workspace/architecture.md` |
+| 검증 증거 | `starter-kits/faq-agent-lite/workspace/validation_log.md` |
 | 인수인계 | `starter-kits/faq-agent-lite/_handoff/handoff.md` |
-| 공개 안전성 | `docs/public-first-safety/` |
+| 공개 안전성 | `guides/public-first-safety/` |
 
 ## PM의 완료 기준
 

@@ -126,17 +126,17 @@ Handoff: Owner: billing operations. Check policy before using in production.
 | Time | Outcome | File |
 |---:|---|---|
 | 0-5 min | Understand the fieldkit | [`START_HERE.md`](START_HERE.md) |
-| 5-12 min | Install and sign in to Codex | [`docs/codex/01-install-login-health-check.md`](docs/codex/01-install-login-health-check.md) |
-| 12-20 min | Open the correct folder | [`docs/codex/02-open-the-right-folder.md`](docs/codex/02-open-the-right-folder.md) |
-| 20-30 min | Let Codex inspect before editing | [`docs/codex/03-inspect-before-edit.md`](docs/codex/03-inspect-before-edit.md) |
+| 5-12 min | Install and sign in to Codex | [`guides/codex/01-install-login-health-check.md`](guides/codex/01-install-login-health-check.md) |
+| 12-20 min | Open the correct folder | [`guides/codex/02-open-the-right-folder.md`](guides/codex/02-open-the-right-folder.md) |
+| 20-30 min | Let Codex inspect before editing | [`guides/codex/03-inspect-before-edit.md`](guides/codex/03-inspect-before-edit.md) |
 | 30-42 min | Adapt the starter agent | [`starter-kits/faq-agent-lite/`](starter-kits/faq-agent-lite/) |
-| 42-50 min | Run tests and evals | [`docs/codex/08-golden-set-and-test-cases.md`](docs/codex/08-golden-set-and-test-cases.md) |
-| 50-56 min | Run release checks | [`docs/release-audit/public-release-checklist.md`](docs/release-audit/public-release-checklist.md) |
-| 56-60 min | Prepare handoff | [`docs/codex/10-handoff-package.md`](docs/codex/10-handoff-package.md) |
+| 42-50 min | Run tests and evals | [`guides/codex/08-golden-set-and-test-cases.md`](guides/codex/08-golden-set-and-test-cases.md) |
+| 50-56 min | Run release checks | [`guides/release-audit/public-release-checklist.md`](guides/release-audit/public-release-checklist.md) |
+| 56-60 min | Prepare handoff | [`guides/codex/10-handoff-package.md`](guides/codex/10-handoff-package.md) |
 
 For a complete narrated adaptation example, see [`examples/adaptation-walkthrough.md`](examples/adaptation-walkthrough.md).
 
-For Korean PM/product leaders, see [`docs/ko/pm-leader-guide.md`](docs/ko/pm-leader-guide.md).
+For Korean PM/product leaders, see [`guides/ko/pm-leader-guide.md`](guides/ko/pm-leader-guide.md).
 
 ## Audience Paths
 
@@ -144,12 +144,12 @@ For Korean PM/product leaders, see [`docs/ko/pm-leader-guide.md`](docs/ko/pm-lea
 |---|---|
 | Non-engineer operators | [`START_HERE_FOR_OPERATORS.md`](START_HERE_FOR_OPERATORS.md) |
 | Korean insurance or service operators | [`START_HERE_FOR_INSURANCE_OPERATORS.md`](START_HERE_FOR_INSURANCE_OPERATORS.md) |
-| PM/CPO or enterprise reviewer | [`docs/production-bridge.md`](docs/production-bridge.md) |
-| Insurance or service operations practitioner | [`docs/adapt-for-insurance-ops.md`](docs/adapt-for-insurance-ops.md) |
-| Workshop facilitator | [`docs/workshop-pack/`](docs/workshop-pack/) |
-| Enterprise IT / enablement owner | [`docs/enterprise-it-preflight.md`](docs/enterprise-it-preflight.md) |
-| Developer adding a new starter kit | [`docs/add-a-starter-kit.md`](docs/add-a-starter-kit.md) |
-| Open-source curator | [`docs/launch/awesome-list-entry.md`](docs/launch/awesome-list-entry.md) |
+| PM/CPO or enterprise reviewer | [`guides/production-bridge.md`](guides/production-bridge.md) |
+| Insurance or service operations practitioner | [`guides/adapt-for-insurance-ops.md`](guides/adapt-for-insurance-ops.md) |
+| Workshop facilitator | [`guides/workshop-pack/`](guides/workshop-pack/) |
+| Enterprise IT / enablement owner | [`guides/enterprise-it-preflight.md`](guides/enterprise-it-preflight.md) |
+| Developer adding a new starter kit | [`guides/add-a-starter-kit.md`](guides/add-a-starter-kit.md) |
+| Open-source curator | [`guides/launch/awesome-list-entry.md`](guides/launch/awesome-list-entry.md) |
 
 ## What's Included
 
@@ -164,7 +164,7 @@ For Korean PM/product leaders, see [`docs/ko/pm-leader-guide.md`](docs/ko/pm-lea
 ├── starter-kits/
 │   ├── faq-agent-lite/        # runnable offline starter agent
 │   └── _template/             # starter-kit contract for future kits
-├── docs/
+├── guides/
 │   ├── codex/                 # Codex workflow for non-engineers
 │   ├── workshop-pack/         # facilitator and learner materials
 │   ├── templates/             # signoff, data inventory, handoff checklists
@@ -226,8 +226,8 @@ The validation gate checks:
 - optional local gitleaks wrapper, with GitHub Actions gitleaks scan in CI
 - handoff and validation-log presence
 
-For the scoring rubric, see [`docs/rubrics/agent-fieldkit-scorecard.md`](docs/rubrics/agent-fieldkit-scorecard.md).
-For eval depth, see [`docs/eval-maturity-guide.md`](docs/eval-maturity-guide.md).
+For the scoring rubric, see [`guides/rubrics/agent-fieldkit-scorecard.md`](guides/rubrics/agent-fieldkit-scorecard.md).
+For eval depth, see [`guides/eval-maturity-guide.md`](guides/eval-maturity-guide.md).
 
 ## Public-First Safety
 
@@ -365,12 +365,12 @@ make validate-report
 |---|---|
 | 비개발자 운영자 | [`START_HERE_FOR_OPERATORS.md`](START_HERE_FOR_OPERATORS.md) |
 | 한국어 보험/서비스 운영자 | [`START_HERE_FOR_INSURANCE_OPERATORS.md`](START_HERE_FOR_INSURANCE_OPERATORS.md) |
-| PM/CPO 또는 enterprise reviewer | [`docs/production-bridge.md`](docs/production-bridge.md) |
-| 보험/서비스 운영 practitioner | [`docs/adapt-for-insurance-ops.md`](docs/adapt-for-insurance-ops.md) |
-| 워크숍 facilitator | [`docs/workshop-pack/`](docs/workshop-pack/) |
-| Enterprise IT / enablement owner | [`docs/enterprise-it-preflight.md`](docs/enterprise-it-preflight.md) |
-| 새 starter kit을 추가하는 developer | [`docs/add-a-starter-kit.md`](docs/add-a-starter-kit.md) |
-| Open-source curator | [`docs/launch/awesome-list-entry.md`](docs/launch/awesome-list-entry.md) |
+| PM/CPO 또는 enterprise reviewer | [`guides/production-bridge.md`](guides/production-bridge.md) |
+| 보험/서비스 운영 practitioner | [`guides/adapt-for-insurance-ops.md`](guides/adapt-for-insurance-ops.md) |
+| 워크숍 facilitator | [`guides/workshop-pack/`](guides/workshop-pack/) |
+| Enterprise IT / enablement owner | [`guides/enterprise-it-preflight.md`](guides/enterprise-it-preflight.md) |
+| 새 starter kit을 추가하는 developer | [`guides/add-a-starter-kit.md`](guides/add-a-starter-kit.md) |
+| Open-source curator | [`guides/launch/awesome-list-entry.md`](guides/launch/awesome-list-entry.md) |
 
 ### 포함된 것
 
@@ -385,7 +385,7 @@ make validate-report
 ├── starter-kits/
 │   ├── faq-agent-lite/        # runnable offline starter agent
 │   └── _template/             # starter-kit contract for future kits
-├── docs/
+├── guides/
 │   ├── codex/                 # Codex workflow for non-engineers
 │   ├── workshop-pack/         # facilitator and learner materials
 │   ├── templates/             # signoff, data inventory, handoff checklists
@@ -428,7 +428,7 @@ make validate
 - optional local gitleaks wrapper, plus GitHub Actions gitleaks scan in CI
 - handoff and validation-log presence
 
-Scoring rubric은 [`docs/rubrics/agent-fieldkit-scorecard.md`](docs/rubrics/agent-fieldkit-scorecard.md)를 참고하세요. Eval maturity는 [`docs/eval-maturity-guide.md`](docs/eval-maturity-guide.md)에 정리되어 있습니다.
+Scoring rubric은 [`guides/rubrics/agent-fieldkit-scorecard.md`](guides/rubrics/agent-fieldkit-scorecard.md)를 참고하세요. Eval maturity는 [`guides/eval-maturity-guide.md`](guides/eval-maturity-guide.md)에 정리되어 있습니다.
 
 ### Public-First Safety
 

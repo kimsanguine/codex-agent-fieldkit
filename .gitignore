@@ -1,4 +1,6 @@
 .DS_Store
+**/docs/
+**/.archive/
 __pycache__/
 *.py[cod]
 .pytest_cache/

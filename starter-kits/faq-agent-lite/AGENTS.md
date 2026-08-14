@@ -7,7 +7,7 @@ This starter kit must remain safe, synthetic, and easy to verify.
 - Use synthetic data only.
 - Keep the demo runnable without an API key.
 - Update tests and golden-set evals when changing agent behavior.
-- Update `docs/validation_log.md` after running validation.
+- Update `workspace/validation_log.md` after running validation.
 - Update `_handoff/handoff.md` before sharing the kit.
 
 ## Preferred Change Loop

@@ -13,7 +13,7 @@ src/faq_agent_lite/cli.py
         |
         +--> tests/test_agent.py
         +--> scripts/eval.py
-        +--> docs/validation_log.md
+        +--> workspace/validation_log.md
         +--> _handoff/handoff.md
 ```
 

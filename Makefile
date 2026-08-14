@@ -22,6 +22,7 @@ safety:
 	bash scripts/check_public_links.sh
 	bash scripts/check_no_generated_artifacts.sh
 	bash scripts/check_gitleaks.sh
+	bash scripts/check_public_surface.sh
 
 validate:
 	$(MAKE) -C starter-kits/faq-agent-lite validate
@@ -32,6 +33,7 @@ validate:
 	bash scripts/check_public_links.sh
 	bash scripts/check_no_generated_artifacts.sh
 	bash scripts/check_gitleaks.sh
+	bash scripts/check_public_surface.sh
 
 validate-report:
 	python3 scripts/write_validation_report.py

@@ -14,13 +14,13 @@
 | 10-15분 | 전체 검증 실행 | `make validate` |
 | 15-22분 | 보험 합성 pack 읽기 | [`examples/insurance-ops-pack/`](examples/insurance-ops-pack/) |
 | 22-27분 | eval/golden-set 구조 확인 | [`examples/insurance-ops-pack/tests/golden_set.jsonl`](examples/insurance-ops-pack/tests/golden_set.jsonl) |
-| 27-30분 | validation log와 handoff 작성 방식 확인 | [`examples/insurance-ops-pack/docs/validation_log.md`](examples/insurance-ops-pack/docs/validation_log.md) |
+| 27-30분 | validation log와 handoff 작성 방식 확인 | [`examples/insurance-ops-pack/workspace/validation_log.md`](examples/insurance-ops-pack/workspace/validation_log.md) |
 
 ## Codex에게 줄 첫 요청
 
 ```text
 README.md, AGENTS.md, START_HERE_FOR_INSURANCE_OPERATORS.md,
-docs/adapt-for-insurance-ops.md, examples/insurance-ops-pack/README.md를 읽어 주세요.
+guides/adapt-for-insurance-ops.md, examples/insurance-ops-pack/README.md를 읽어 주세요.
 
 나는 보험 서비스 운영자입니다. 실제 고객 데이터 없이 ACME Life 합성 데이터로
 어떤 질문은 답하고, 어떤 질문은 멈추고, 어떤 질문은 담당자에게 넘겨야 하는지

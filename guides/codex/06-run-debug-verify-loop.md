@@ -28,7 +28,7 @@ After fixing, rerun the failed command first, then make validate.
 Update:
 
 ```text
-docs/validation_log.md
+guides/validation_log.md
 ```
 
 Do not mark handoff ready unless validation has actually run.

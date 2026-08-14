@@ -42,10 +42,10 @@ This repo now includes:
 - `make test`
 - `make eval`
 - `make validate`
-- `docs/codex/`
-- `docs/public-first-safety/`
-- `docs/release-audit/`
-- `docs/rubrics/`
+- `guides/codex/`
+- `guides/public-first-safety/`
+- `guides/release-audit/`
+- `guides/rubrics/`
 - `.agents/skills/codex-agent-fieldkit/`
 
 ## Publication Gate

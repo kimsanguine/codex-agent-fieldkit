@@ -147,7 +147,7 @@ make validate
 아래 파일에 오늘 실행한 명령과 결과를 한 줄 추가합니다.
 
 ```text
-starter-kits/faq-agent-lite/docs/validation_log.md
+starter-kits/faq-agent-lite/workspace/validation_log.md
 ```
 
 기록 예시:
@@ -195,7 +195,7 @@ starter-kits/faq-agent-lite/_handoff/handoff.md
 | Python이 없음 | `python3: command not found` | `python3 --version` | Python 3 설치가 필요합니다. 설치 전에는 데이터를 수정하지 말고 환경 준비 상태를 handoff에 남깁니다. |
 | eval 점수가 기준보다 낮음 | `Eval score below threshold` | 어떤 케이스가 `FAIL`인지 | 실패한 `G001` 같은 케이스를 보고 CSV 답변과 `tests/golden_set.jsonl`의 기대 문구가 맞는지 확인합니다. 실제 데이터로 보강하지 말고 합성 예시로 수정합니다. |
 | private-term scan 실패 | `check_no_private_terms` 또는 안전 스캔 실패 | 새로 넣은 회사명, 내부 링크, 사람 이름, 고객 정보 | 공개 가능한 가상명으로 바꿉니다. 예: 실제 회사명 대신 `ACME Life`, 실제 고객명 대신 `Sample Customer`. |
-| validation log를 안 고침 | 검증은 했지만 기록이 없음 | `starter-kits/faq-agent-lite/docs/validation_log.md` | 실행한 명령, 결과, 증거, 남은 한계를 한 줄 추가합니다. 기록이 없으면 다음 사람이 상태를 믿을 수 없습니다. |
+| validation log를 안 고침 | 검증은 했지만 기록이 없음 | `starter-kits/faq-agent-lite/workspace/validation_log.md` | 실행한 명령, 결과, 증거, 남은 한계를 한 줄 추가합니다. 기록이 없으면 다음 사람이 상태를 믿을 수 없습니다. |
 | handoff가 오래됨 | 검증 결과와 인수인계 문서 내용이 다름 | `_handoff/handoff.md` | 최신 실행 결과와 남은 위험을 맞춥니다. "검증 완료"라고 쓰려면 실제 명령 결과가 있어야 합니다. |
 
 ## 운영자 완료 기준
@@ -208,7 +208,7 @@ starter-kits/faq-agent-lite/_handoff/handoff.md
 - `sample_faqs.csv`의 합성 FAQ 한 줄을 수정했다.
 - `make eval` 또는 `make validate` 결과를 확인했다.
 - 실패가 있었다면 원인과 수정 내용을 기록했다.
-- `docs/validation_log.md`를 최신화했다.
+- `guides/validation_log.md`를 최신화했다.
 - `_handoff/handoff.md`에 다음 담당자가 알아야 할 상태를 남겼다.
 - 실제 고객 데이터, 내부 링크, 비공개 보험 자료를 넣지 않았다.
 

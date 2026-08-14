@@ -19,7 +19,7 @@ Use this skill inside this repository when adapting a starter kit.
 starter-kits/faq-agent-lite/data/sample_faqs.csv
 starter-kits/faq-agent-lite/tests/golden_set.jsonl
 starter-kits/faq-agent-lite/tests/test_agent.py
-starter-kits/faq-agent-lite/docs/validation_log.md
+starter-kits/faq-agent-lite/workspace/validation_log.md
 starter-kits/faq-agent-lite/_handoff/handoff.md
 ```
 

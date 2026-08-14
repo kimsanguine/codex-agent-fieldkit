@@ -44,8 +44,8 @@ synthetic data -> deterministic answer -> unit test -> golden-set eval -> valida
 ```text
 data/sample_faqs.csv
 tests/golden_set.jsonl
-docs/prd.md
-docs/validation_log.md
+workspace/prd.md
+workspace/validation_log.md
 _handoff/handoff.md
 ```
 

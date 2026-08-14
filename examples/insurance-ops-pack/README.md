@@ -12,7 +12,7 @@ used with `starter-kits/faq-agent-lite/` or a private starter kit.
 examples/insurance-ops-pack/
 ├── data/synthetic_insurance_faqs.csv
 ├── tests/golden_set.jsonl
-├── docs/validation_log.md
+├── workspace/validation_log.md
 └── _handoff/handoff.md
 ```
 
@@ -22,7 +22,7 @@ examples/insurance-ops-pack/
 Read examples/insurance-ops-pack/README.md,
 examples/insurance-ops-pack/data/synthetic_insurance_faqs.csv,
 examples/insurance-ops-pack/tests/golden_set.jsonl,
-and docs/adapt-for-insurance-ops.md.
+and workspace/adapt-for-insurance-ops.md.
 
 Explain how to adapt the current FAQ starter kit to this synthetic insurance
 operations domain. Do not use real customer data.

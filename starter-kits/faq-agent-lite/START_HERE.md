@@ -31,7 +31,7 @@ PYTHONPATH=src python3 -m faq_agent_lite.cli ask "Can I change my billing date?"
 After each meaningful change, update:
 
 ```text
-docs/validation_log.md
+workspace/validation_log.md
 ```
 
 Include:

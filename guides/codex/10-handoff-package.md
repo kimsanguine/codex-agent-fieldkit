@@ -15,7 +15,7 @@ It is done when another owner can understand:
 ```text
 _handoff/handoff.md
 _handoff/migration_checklist.md
-docs/validation_log.md
+guides/validation_log.md
 ```
 
 ## Ask Codex

@@ -35,8 +35,8 @@ Start with a folder that contains:
 ```text
 README.md
 AGENTS.md
-docs/prd.md
-docs/validation_log.md
+guides/prd.md
+guides/validation_log.md
 starter-kits/faq-agent-lite/tests/golden_set.jsonl
 _handoff/handoff.md
 ```

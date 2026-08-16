@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "primary": "faq-agent-lite",
+  "kits": [
+    {
+      "id": "faq-agent-lite",
+      "path": "starter-kits/faq-agent-lite"
+    }
+  ]
+}

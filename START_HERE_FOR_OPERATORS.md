@@ -203,12 +203,13 @@ starter-kits/faq-agent-lite/_handoff/handoff.md
 아래를 모두 만족해야 이 15-30분 루프가 끝난 것입니다.
 
 - 올바른 repo root에서 실행했다.
+- `make doctor`로 환경과 repository contract를 먼저 확인했다.
 - Codex가 먼저 구조를 점검했고, 바로 수정부터 하지 않았다.
 - `make demo`를 실행했다.
 - `sample_faqs.csv`의 합성 FAQ 한 줄을 수정했다.
 - `make eval` 또는 `make validate` 결과를 확인했다.
 - 실패가 있었다면 원인과 수정 내용을 기록했다.
-- `guides/validation_log.md`를 최신화했다.
+- `starter-kits/faq-agent-lite/workspace/validation_log.md`를 최신화했다.
 - `_handoff/handoff.md`에 다음 담당자가 알아야 할 상태를 남겼다.
 - 실제 고객 데이터, 내부 링크, 비공개 보험 자료를 넣지 않았다.
 

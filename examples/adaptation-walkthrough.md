@@ -124,7 +124,7 @@ make validate: pass
 
 ## Step 5: Update Validation Log And Handoff
 
-`guides/validation_log.md` should include the failure and the fix:
+`starter-kits/faq-agent-lite/workspace/validation_log.md` should include the failure and the fix:
 
 ```markdown
 | 2026-06-22 | `make eval` | Failed, then passed | First run failed G021-G023 because the golden set expected `twice per year`; corrected to the intended synthetic policy `per quarter`; final score 100% (23/23) | Fictional benefits adaptation only |

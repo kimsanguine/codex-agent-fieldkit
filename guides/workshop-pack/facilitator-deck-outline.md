@@ -22,7 +22,7 @@ Show:
 - `README.md`
 - `AGENTS.md`
 - `starter-kits/faq-agent-lite/`
-- `guides/validation_log.md`
+- `starter-kits/faq-agent-lite/workspace/validation_log.md`
 - `_handoff/handoff.md`
 
 ## 5. Run The Demo

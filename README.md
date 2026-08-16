@@ -31,6 +31,7 @@ This is not production certification. It is a public-safe delivery kit for learn
 ```bash
 git clone https://github.com/kimsanguine/codex-agent-fieldkit.git
 cd codex-agent-fieldkit
+make doctor
 make demo
 make validate
 make validate-report
@@ -97,6 +98,7 @@ Run the starter kit without an API key:
 ```bash
 git clone https://github.com/kimsanguine/codex-agent-fieldkit.git
 cd codex-agent-fieldkit
+make doctor
 make setup
 make demo
 make test
@@ -111,6 +113,19 @@ Expected result:
 - `make eval` checks the agent against a golden set.
 - `make validate` runs tests, evals, and public-release safety scans.
 - `make validate-report` writes a shareable report for review or CI artifact upload.
+
+`make doctor` is read-only: it distinguishes a wrong folder or missing required
+tool from an optional missing Codex CLI. It does not create data, install
+dependencies, or modify a starter kit.
+
+## First Skill-Guided Adaptation
+
+After `make doctor` and `make demo` pass, start Codex **from this repository
+root**, confirm the repository skill with `/skills`, then invoke
+`$codex-agent-fieldkit` with one synthetic change—for example: “Add one
+synthetic FAQ row, update its golden-set case, run validation, and record the
+result in the validation log.” Finish with `make validate` and update
+`starter-kits/faq-agent-lite/workspace/validation_log.md` plus the handoff.
 
 Sample output:
 
